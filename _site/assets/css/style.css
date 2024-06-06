@@ -147,7 +147,7 @@ footer {
 }
 
 .my-table th, .my-table td {
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid white;
     padding: 8px;
     text-align: left;
     

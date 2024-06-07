@@ -92,14 +92,6 @@ section .image {
     /* border: 1px solid black; */
 }
 
-section .image1 {
-    flex: 1 1 30%;
-    text-align: center;
-    margin-bottom: 0px;
-    /* margin-right: 20px; */
-    /* border: 1px solid black; */
-}
-
 section .image img {
     max-width:30%;
     height: auto;
@@ -108,14 +100,51 @@ section .image img {
     margin-left: 10px;
     /* border: 1px solid black; */
 }
+section .image_wide {
+    flex: 1 1 50%;
+    text-align: center;
+    margin-bottom: 0px;
+    /* margin-right: 20px; */
+    /* border: 1px solid black; */
+}
 
-section .image1 img {
+section .image_wide img {
+    max-width:80%;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+
+section .image_user{
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 0px;
+    /* margin-right: 20px; */
+    /* border: 1px solid black; */
+}
+
+section .image_user img {
     max-width:50%;
     height: auto;
     display: inline-block;
     margin-right: 10px;
     margin-left: 10px;
     /* border: 1px solid black; */
+}
+section .image_praxis{
+    flex: 1 1 50%;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+section .image_praxis img {
+    max-width:30%;
+    height: auto;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 section .content {

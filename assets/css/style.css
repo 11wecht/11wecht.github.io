@@ -135,7 +135,7 @@ section .image_user img {
 }
 section .image_praxis{
     flex: 1 1 50%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0px;
 }
 
@@ -145,6 +145,22 @@ section .image_praxis img {
     display: inline-block;
     margin-right: 0px;
     margin-left: 0px;
+}
+section .image_mind {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    /* margin-right: 20px; */
+    /* border: 1px solid black; */
+}
+
+section .image_mind img {
+    max-width:90%;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
 }
 
 section .content {
@@ -222,4 +238,50 @@ section .new-container p {
         gap: 10px;
     }
 } 
+
+/* General styling for the section */
+#ueber-mich {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: left;
+    margin: 20px 0;
+}
+
+/* #ueber-mich h2 {
+    text-align: left;
+    width: 100%;
+} */
+
+/* Profile container to hold mind map and profile photo side by side */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Styling for mind map and profile photo */
+.image_mind, .image_user {
+    flex: 1 1 40%;
+    text-align: center;
+    margin: 10px;
+}
+
+.image_mind img, .image_user img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    .image_mind, .image_user {
+        flex: 1 1 100%;
+    }
+}
+
 

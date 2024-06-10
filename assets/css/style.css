@@ -239,7 +239,8 @@ section .new-container p {
     }
     nav ul {
         /* flex-direction: column; */
-        gap: 5px;
+        gap: 10px;
+        text-align: center;
     }
 } 
 

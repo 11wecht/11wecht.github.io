@@ -2,372 +2,127 @@
 layout: default
 
 ---
-<div class="container">
-    <header>
-        <div class="logo">
-            <img src="/assets/images/LOGO_KW.svg" alt="logo">
-        </div>
-        <div class="header-content">
-            <h1>Katrin Wecht, MSc. - Klinische Psychologie</h1>
-            {% include navigation.html %}
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katrin Wecht, MSc</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo">
+                    <img src="/assets/images/LOGO_KW.svg" alt="logo">
+                </div>
+                <span class="navbar-title">Katrin Wecht, MSc</span>
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="#angebot">Angebot</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#ueber-mich">Über&nbsp;mich</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#leistung">Leistung</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#ablauf">Ablauf</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#kontakt">Kontakt</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#kosten">Kosten</a></li>
+
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section id="angebot">
-        <div class="content">
-            <h2>Angebot</h2>
 
-            <p>Meine klinisch-psychologische Praxis soll einen <b>schützenden Rahmen</b> bieten, der es Ihnen
-                ermöglicht, Sie <b>selbst</b> zu <b>sein</b>, sich <b>sicher</b> zu <b>fühlen</b> und <b>Mitgefühl</b>
-                für sich selbst
-                zu entwickeln. Dabei ist es mir wichtig, jeden Menschen in seiner <b>Individualität</b> wahrzunehmen und
-                wertzuschätzen
-                und ihm auf <b>gleicher Augenhöhe</b> zu begegnen.
-                Da sich jeder Mensch in seinen Erfahrungen, Gefühlen, Persönlichkeitsmerkmalen und Handlungsweisen
-                voneinander unterscheidet, gestaltet sich die klinisch-psychologische Behandlung bei jedem Menschen
-                anders.
-                <b>Gemeinsam</b> möchte ich mit Ihnen herausfinden, <b>was Ihnen wirklich wichtig ist</b> und wie sie
-                daran festhalten können, um gleichzeitig das <b>Leid</b>, das Sie zu mir geführt hat, zu <b>lindern</b>.
-            </p>
 
-            <p>Als Klinische Psychologin bin ich, gemäß § 37 Psychologengesetz 2013, BGBl. I Nr. 182/2013, zur
-                <b>Verschwiegenheit</b> über alle mir in Ausübung meines Berufes bekannt gewordenen Geheimnisse
-                verpflichtet.
-            </p>
-        </div>
-        <div class="image">
-            <img src="/assets/images/Angebot.png" alt="Angebot">
-        </div>
-    </section>
 
-    <section id="ueber-mich">
-        <div class="content">
-            <h2>Über mich</h2>
-            <div class="profile-container">
-                <div class="image_mind">
-                    <img src="/assets/images/ueber_mich.png" alt="Mind Map">
-                </div>
-                <div class="image_user">
-                    <img src="/assets/images/image.jpg" alt="Profile Photo">
-                </div>
+    <section class="flex-section">
+        <div class="flex-container">
+            <div class="flex-item image-container">
+                <img src="assets/images/IMG_4248 2.JPG" alt="Descriptive Alt Text">
             </div>
+            <div class="flex-item text-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel
+                    scelerisque nisl consectetur et.</p>
 
-
-
-            <div class="new-container">
-                <table class="my-table">
-                    <thead>
-                        <tr>
-                            <th>Beruf</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>2020-2024: Gesellschaft zur Förderung seelischer Gesundheit GFSG: Mobile
-                                        Sozialpsychiatrische Betreuung</li>
-                                    <li>2017-2022: Therapeutisches und Diagnostisches Zentrum für Menschen mit Autismus
-                                        und
-                                        Asperger: Familienentlastungsdienst</li>
-                                    <li>2019-2021: Verein Rainbows: Trauerbegleitung</li>
-                                    <li>2016: Karl-Franzens Universität: Studentische Mitarbeiterin</li>
-                                    <li>2015: LKH II Standort Süd, Abteilung: Zentrum für Suchtmedizin: Praktikum</li>
-                                    <li>2013: Psychosozialen Netzwerk: Praktikum in der Mobilen Sozialpsychiatrischen
-                                        Betreuung</li>
-                                    <li>2012: Institut für Kind, Jugend und Familie: Praktikum</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="new-container">
-                <table class="my-table">
-                    <thead>
-                        <tr>
-                            <th>Ausbildung</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>2019-2023: Ausbildungslehrgang Klinische Psychologie: Österreichische Akademie
-                                        für
-                                        Psychologie AAP: staatlich anerkannte Ausbildung (nach BMG) zur Klinischen
-                                        Psychologin
-                                    </li>
-                                    <li>2018-2023: „RAINBOWS: Ausbildungslehrgang Trauerbegleitung“</li>
-                                    <li>2015-2018: Universitätslehrgang Psychotherapeutisches Propädeutikum</li>
-                                    <li>2013-2016: Masterstudium Psychologie; Schwerpunkt: Klinische Psychologie</li>
-                                    <li>2010-2013: Bachelorstudium Psychologie</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
-            <div class="new-container">
-                <table class="my-table">
-                    <thead>
-                        <tr>
-                            <th>Fort- und Weiterbildungen</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Beratung von Eltern bei Erziehungsfragen</li>
-                                    <li>ACT-Akzeptanz-Commitment Therapy</li>
-                                    <li>LKM-Loving Kindness Meditation</li>
-                                    <li>Psychosomatik</li>
-                                    <li>Beziehungsdiagnostik (Familienbrett und Familiensystem-Test (FAST))</li>
-                                    <li>Diagnose und Behandlung von Zwangsstörungen</li>
-                                    <li>Autismusspezifische Weiterbildungen (Autismus und Aggression; Pubertät und
-                                        Sexualität
-                                        bei Menschen mit einer Störung aus dem Autismus-Spektrum)</li>
-                                    <li>Krisenintervention</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
-            <div class="new-container">
-                <table class="my-table">
-                    <thead>
-                        <tr>
-                            <th>Mitgliedschaft</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>BÖP Berufsverband Österreichischer Psycholog:innen </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-    <section id="leistung">
-        <div class="content">
-            <h2>Leistung</h2>
-            <p><b><u>Klinisch-psychologische Behandlung:</u></b></p>
-            <p>Ziel der klinisch-psychologischen Behandlung ist es psychische Störungen und Leidenszustände zu lindern
-                oder aus dem Weg zu räumen. Klinische Psycholog:innen verfügen über eine wissenschaftlich fundierte
-                Ausbildung, die es Ihnen ermöglicht, Menschen bei der Bewältigung psychischer, sozialer, emotionaler und
-                körperlicher Beeinträchtigungen oder Erkrankungen zu unterstützen. Gemeinsam mit den Klient:innen werden
-                Hilfestellungen entwickelt, die den Umgang mit Belastungen und Krisen erleichtern sollen, um die
-                Lebensqualität insgesamt zu verbessern.</p>
-            <p><b>Meine Schwerpunkte:</b></p>
-            <p>
-            <ul>
-                <li>Depressionen und bipolare Erkrankung</li>
-                <li>Angst- und Panikstörungen</li>
-                <li>Spezifische Phobien, z.B. Angst im Straßenverkehr</li>
-                <li>Soziale Ängstlichkeit</li>
-                <li>Zwangsstörungen</li>
-                <li>Autismus-Spektrum-Störungen</li>
-                <li>Krankheitsängste und psychosomatische Störungen</li>
-                <li>Psychotische Störungen, z.B. Schizophrenie</li>
-                <li>Persönlichkeitsstörungen</li>
-                <li>Suchterkrankungen z.B.: Internet- und Gamingsucht, Kaufsucht, Alkohol, Drogen</li>
-                <li>Mobbing und Ausgrenzung</li>
-                <li>Schlafstörungen</li>
-                <li>Psychische Probleme während der Schwangerschaft und nach der Geburt</li>
-                <li>Beziehungsthemen und Selbstwertprobleme</li>
-                <li>Erziehungsfragen</li>
-                <li>Lebenskrisen und Anpassungsstörungen</li>
-                <li>Verlust und Trauer</li>
-                <li>Suizidalität</li>
-                <li>Individuelle Problemstellungen</li>
-
-            </ul>
-            <b>Settings:</b>
-            <ul>
-                <li>Einzel</li>
-                <li>Paar</li>
-                <li>Gruppe</li>
-                <li>Familie</li>
-            </ul>
-            <b><u>Klinisch-psychologische Diagnostik:</u></b>
-            <p>Das Ziel der klinisch-psychologischen Diagnostik besteht darin, psychische Probleme oder Störungen in Art
-                und Ausmaß bei Menschen aller Altersgruppen zu identifizieren und andere diagnostische Fragestellungen
-                zu beantworten. Diese können sich auf verschiedene Aspekte beziehen, darunter:</p>
-            <ul>
-                <li>psychologische Allgemeindiagnostik, um herauszufinden, ob und welche psychische Erkrankung vorliegt
-                </li>
-                <li>Persönlichkeitsdiagnostik: Identifizieren von Persönlichkeitsmerkmalen, -stilen & -störungen</li>
-                <li>Leistungsdiagnostik: Erfassen der psychischen und kognitiven Leistungsfähigkeit</li>
-                <li>Beziehungsdiagnostik: Erfassen von partnerschaftlichen und familiären Problemfeldern</li>
-            </ul>
-
-            <b><u>Klinisch-psychologische Gutachten:</u></b>
-            <p>
-                Ein klinisch-psychologisches Gutachten wird erstellt, um spezifische Fragestellungen zu beantworten oder
-                rechtlichen Anliegen gerecht zu werden. Vor der Erstellung eines Gutachtens findet eine ausführliche
-                klinisch-psychologische Diagnostik statt, die durch Bewertungen und Empfehlungen von Expert:innen
-                ergänzt wird. Der Hauptunterschied zu einem klinisch-psychologischen Befund, welcher vorwiegend zur
-                Unterstützung von Behandlungsentscheidungen herangezogen wird, besteht darin, dass
-                klinisch-psychologische Gutachten häufig einen rechtlichen oder administrativen Zweck erfüllen.
-                Mögliche Anwendungsfelder, in denen klinisch-psychologische Gutachten benötigt werden
-            </p>
-            <ul>
-                <li>klinisch-psychologische Aufnahmeprüfung</li>
-                <li>Polizeiaufnahmeprüfung</li>
-                <li>OP-Freigabe (Magen Bypass, . . .)</li>
-                <li>. . .</li>
-            </ul>
-            <b><u>Vorträge und Workshops</u></b>
-            </p>
-        </div>
-        <div class="image">
-            <img src="/assets/images/Leistung.png" alt="Leistung">
-        </div>
-    </section>
-
-    <section id="ablauf">
-        <div class="content">
-            <h2>Ablauf</h2>
-            <p><b><u>Klinisch-psychologische Behandlung</u></b></p>
-            <p><b>Kontaktaufnahme:</b></p>
-            <p>
-                Nachdem Sie mich telefonisch oder per E-Mail kontaktiert haben, werden wir einen passenden Termin für
-                das Erstgespräch vereinbaren.
-            </p>
-            <p><b>Erstgespräch:</b></p>
-            <p>
-                Das Erstgespräch bietet die Gelegenheit für ein erstes Kennenlernen. Wir besprechen Ihr Anliegen und was
-                Sie zu mir führt. Oftmals haben Klient:innen viele Fragen, die sie beschäftigen. Ich kann mir sehr gut
-                vorstellen, dass es viel Überwindung kostet, psychologische Hilfe in Anspruch zu nehmen und über Themen
-                zu sprechen, die sie sehr bewegen. Dieses Erstgespräch soll dazu dienen, all Ihre Fragen und Bedenken
-                bezüglich der psychologischen Behandlung zu klären. Sie haben die Möglichkeit, mich kennenzulernen und
-                zu entscheiden, ob Sie sich bei mir wohlfühlen und mir vertrauen können. Ich werde mir einen Überblick
-                über Ihr Anliegen verschaffen, und wir entwickeln gemeinsam einen ersten Plan, der auf Ihre
-                individuellen Bedürfnisse abgestimmt ist.
-            </p>
-            <p><b>Klinisch-psychologische Behandlung:</b></p>
-            <p>
-                Im Rahmen unserer Treffen geht es zunächst darum, herauszufinden, wie es bei Ihnen zu diesem Problem
-                oder dieser Störung gekommen ist (Auslöser) und was dazu beiträgt, dass es nicht besser wird
-                (Aufrechterhaltung) bzw. welche Situationen das Leid verstärken (Verstärker). Der Ansatz, den ich
-                verfolge, zielt darauf ab, gemeinsam mit Ihnen zu lernen, emotionalen Problemen mit Mitgefühl und
-                Achtsamkeit zu begegnen. Gleichzeitig möchten wir vorhandene Ressourcen und Werte, mit denen Sie sich
-                identifizieren, (wieder-) entdecken.<br>
-                <br>
-                Wichtig ist dabei, dass wir nur Methoden anwenden, denen Sie zustimmen. Wir entscheiden gemeinsam, was
-                in der Situation angemessen ist und sich gut anfühlt. Alles kann, nichts muss! Wenn Sie über etwas nicht
-                sprechen möchten, müssen wir das nicht tun und finden einen anderen Weg.
-            </p>
-            <p><b>Ende der Behandlung:</b></p>
-            <p>
-                Die Entscheidung darüber, wann Sie die klinisch-psychologische Behandlung beenden möchten, liegt in
-                erster Linie bei Ihnen. Grundsätzlich wird ein Ende der Behandlung in Betracht gezogen, wenn Sie eine
-                spürbare Verbesserung Ihres Zustands feststellen und sich besser gerüstet fühlen, um den
-                Herausforderungen des Lebens zu begegnen. Zu diesem Zeitpunkt sollten Sie über verschiedene Strategien
-                und Werkzeuge verfügen, die es Ihnen ermöglichen, mit psychischen Stressoren umzugehen. Möglicherweise
-                haben Sie gelernt, sich selbst, wie einen guten Freund zu behandeln und mitfühlender mit sich selbst zu
-                sein, ihre Werte zu kennen und an ihnen festzuhalten. Um einem zu plötzlichen Ende der Behandlung
-                entgegenzuwirken, können wir die Sitzungen gegen Ende hin in größeren Abständen planen und die
-                Behandlung so allmählich ausklingen lassen. Auf diese Weise können wir besprechen, wie es Ihnen mit den
-                erlernten Strategien im Laufe der Zeit ergeht. Wenn die Behandlung einmal abgeschlossen ist, findet ein
-                Abschlussgespräch statt. Dies bedeutet jedoch nicht, dass Sie nicht wiederkommen können, falls Sie in
-                Zukunft Unterstützung benötigen.
-            </p>
-            <div class="image_wide">
-                <img src="/assets/images/AblaufKPB.png" alt="Ablauf">
-            </div>
-            <p><b><u>Klinisch-psychologische Diagnostik:</u></b></p>
-            <p>
-                Nach einer telefonischen Kontaktaufnahme oder einer Anfrage per E-Mail wird die konkrete Fragestellung
-                für die klinisch-psychologische Diagnostik besprochen, um das weitere Vorgehen zu planen. Zu Beginn
-                finden ein ausführliches Gespräch und eine Anamnese statt. Anschließend kommen je nach Fragestellung
-                verschiedene psychologische Testverfahren, Fragebögen und klinische Interviews zum Einsatz. Manchmal ist
-                es auch notwendig, das nähere Umfeld miteinzubeziehen, um ein umfassendes Bild zu erhalten. Die Anzahl
-                und Dauer der Sitzungen variieren je nach Fragestellung und werden vorab festgelegt.
-                Nach der Diagnostik werte ich die Ergebnisse aus und erstelle einen schriftlichen Befund, den wir
-                gemeinsam besprechen. Wir erarbeiten auch die weitere Vorgehensweise und entscheiden, ob eine
-                weiterführende klinisch-psychologische Behandlung, Psychotherapie oder ärztliche Untersuchungen
-                empfehlenswert sind.
-            </p>
-
-
-        </div>
-
-
-    </section>
-
-    <section id="kontakt">
-        <div class="content">
-            <h2>Kontakt</h2>
-            <p>Katrin Wecht, MSc. <br>
-                Praxis für klinische Psychologie<br>
-                Hauptplatz 34, 8130 Frohnleiten<br>
-                office@kw-psychologie.at<br>
-                +43 670 355 86 18<br></p>
-            <p>Wenn Sie mich nicht gleich erreichen, melde ich mich zurück, sobald es mir möglich ist.<br>
-                In dringenden Notfällen, vor allem wochenends oder abends, besteht die Möglichkeit das psychiatrische
-                Krisentelefon PsyNot mit der Telefonnumer 0800 44 99 33 anzurufen. Diese Nummer ist jeden Tag 24 Stunden
-                erreichbar und die Anrufe sind
-                kostenlos.</p>
-
-
-
-            <p><b>Die Praxis:</b></p>
-            <div class="image_praxis">
-                <img src="/assets/images/praxis1.jpg" alt="Kontakt">
-                <img src="/assets/images/praxis2.jpg" alt="Kontakt">
-                <img src="/assets/images/praxis3.jpg" alt="Kontakt">
-            </div>
-            <p><b>Stornierungsbedingungen:</b></p>
-            <p>Ich bitte Sie, Termine, die Sie nicht einhalten können, mindestens <b>24h</b> vor Beginn abzusagen.</p>
-        </div>
-
-    </section>
-
-    <section id="kosten">
-        <div class="content">
-            <h2>Kosten</h2>
-            <p>Eine Einheit umfasst <b>50 Minuten</b> und wird mit <b>85 €</b> verrechnet. Seit Jänner 2024 ist die
-                klinisch-psychologische Behandlung eine Kassenleistung. Bei der ÖGK liegt der Kostenzuschuss für eine
-                <b>60-minütige</b> Einzeltherapie bei <b>33,70 €</b>, bei der SVS für eine Einzeltherapie (ab <b>50
-                    Minuten</b>) bei <b>45 €</b>,
-                bei der BVAEB für eine Einzeltherapier (ab <b>50 Minuten</b>) bei <b>46,60 €</b>.
-                Voraussetzung für einen Kostenzuschuss ist das <b>Vorliegen einer psychischen Erkrankung/
-                    Befindungsstörung</b>. Spätestens vor der zweiten Sitzung muss eine ärztliche Untersuchung
-                durchgeführt
-                worden sein und eine <b>Bestätigung</b> über diese mitgebracht werden. Genaueres können wir gerne beim
-                Erstgespräch besprechen.
-            </p>
-
-
-            <p>Die Kosten für eine klinisch-psychologische Diagnostik, sowie für die Erstellung eines
-                klinisch-psychologischen Gutachtens werden je nach Fragestellung und Umfang angepasst.
-            </p>
-        </div>
-    </section>
-
-
-
-
-
     <footer>
         <p>&copy; 2024 Matthias Wecht, MSc. Alle Rechte vorbehalten. | <a href="impressum.html">Impressum</a></p>
     </footer>
-</div>
+</body>
+
+</html>
+<!-- Slideshow container -->
+
+
+<!-- <div class="slideshow-container">
+
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="/assets/images/IMG_4248 2.JPG" style="width:40%">
+                            
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="assets/images/IMG_4256 2.JPG" style="width:100%">
+                            
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="assets/images/IMG_4268 2.JPG" style="width:100%">
+                            
+                        </div>
+
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+Offenlegung
+Impressum
+Rechtsform Einzelunternehmen
+
+Datenschutzhinweis grundsätzlich keine Dtenweitergabe
+
+Daten: Persönliche Daten, was damit passiert, wie werden die Daten verarbeitet?
+Daten werden aus email ausgelesen und weiterverarbeitet zum Zweck der Anfrage.
+Persönliche Daten werden gespeichert wenn es zu einer ****** behandlung kommt.
+werden nicht an dritte weitergegeben. Behaltefrist gesetzliche Verjährungspflicht für Schadensansprüche.
+
+
+
+
+
+-->

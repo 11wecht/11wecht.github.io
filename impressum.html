@@ -2,15 +2,30 @@
 layout: default
 
 ---
-<div class="container">
-    <header>
-        <div class="logo">
-            <img src="/assets/images/LOGO_KW.svg" alt="logo">
-        </div>
-        <div class="header-content">
-            <h1>Katrin Wecht, MSc. - Klinische Psychologie</h1>
-            <!-- {% include navigation.html %} -->
-        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katrin Wecht, MSc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo">
+                    <img src="/assets/images/LOGO_KW.svg" alt="logo">
+                </div>
+                <span class="navbar-title">Katrin Wecht, MSc</span>
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </nav>
     </header>
 
     <section id="Impressum">
@@ -58,4 +73,4 @@ layout: default
     <footer>
         <p>&copy; 2024 Matthias Wecht, MSc. Alle Rechte vorbehalten.</p>
     </footer>
-</div>
+    </body>

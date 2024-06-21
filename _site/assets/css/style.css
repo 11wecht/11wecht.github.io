@@ -42,7 +42,19 @@ body {
 }
 
 /* Section & Flex Containers */
-.flex-section {
+.flex-section_angebot {
+    padding: 20px;
+    background-color: #fdfbf6;
+    
+}
+
+.flex-section_ich {
+    padding: 20px;
+    background-color: #f6faec;
+    
+}
+
+.flex-section_leistung {
     padding: 20px;
     background-color: #fdf5e6;
     
@@ -59,7 +71,7 @@ body {
 
 .flex-item {
     flex: 1;
-    padding: 10px;
+    padding: 20px;
 }
 
 .image-container img {
@@ -85,6 +97,46 @@ body {
     text-align: justify;
     /* border: 1px solid black; */
 }
+
+
+.circular-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto; /* Center the circular container */
+    /* border: 1px solid black; */
+    padding: auto;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+    font-family: inherit; /* Inherit font from the body */
+}
+
+.my-table {
+    border-collapse: collapse;
+    /* width: 100%; */
+    flex: 1 1 100%;
+    /* border: 1px solid white; */
+}
+
+.my-table th, .my-table td {
+    /* border: 1px solid white; */
+    padding: 8px;
+    text-align: left;
+    
+}
+
+.my-table th {
+    /* background-color: #f2c35e33; */
+    color: rgba(0, 0, 0, 1);
+}
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -268,6 +320,8 @@ section:first-of-type {
     padding-top: calc(var(--navbar-height) + 20px);
 }
 
+
+
 /* Footer */
 footer {
     text-align: center;
@@ -363,3 +417,5 @@ footer {
         opacity: 1
     }
 }
+
+

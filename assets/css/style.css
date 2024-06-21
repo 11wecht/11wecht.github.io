@@ -32,6 +32,13 @@ body {
     padding: 0;
 }
 
+section {
+    padding-top: calc(var(--navbar-height) + 20px); 
+}
+section:first-of-type {
+    padding-top: calc(var(--navbar-height) + 20px);
+}
+
 /* Container */
 .container {
     max-width: 1000px;
@@ -93,7 +100,7 @@ body {
 }
 
 .text-container {
-    padding: 20px;
+    padding: 30px;
     text-align: justify;
     /* border: 1px solid black; */
 }
@@ -127,7 +134,7 @@ body {
 
 .my-table th, .my-table td {
     /* border: 1px solid white; */
-    padding: 8px;
+    padding: 10px;
     text-align: left;
     
 }
@@ -149,7 +156,7 @@ body {
     }
 
     .text-container {
-        padding: 10px;
+        padding: 20px;
     }
     .flex-container.reverse {
         flex-direction: column-reverse; 
@@ -316,9 +323,7 @@ body {
     }
 }
 
-section:first-of-type {
-    padding-top: calc(var(--navbar-height) + 20px);
-}
+
 
 
 

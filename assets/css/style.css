@@ -51,24 +51,35 @@ section:first-of-type {
 /* Section & Flex Containers */
 .flex-section_angebot {
     padding: 20px;
-    background-color: #fdfbf6;
+    background-color: #f2f2f2;
     
 }
 
 .flex-section_ich {
     padding: 20px;
-    background-color: #CED7A6 ;
+    background-color: #d5e1d4;
     
 }
 
 .flex-section_leistung {
     padding: 20px;
-    background-color: #fdfbf6;
+    background-color: #f2f2f2;
     
 }
 .flex-section_ablauf {
     padding: 20px;
-    background-color: #CED7A6;
+    background-color: #d5e1d4;
+    
+}
+
+.flex-section_kontakt {
+    padding: 20px;
+    background-color: #f2f2f2;
+    
+}
+.flex-section_kosten {
+    padding: 20px;
+    background-color: #d5e1d4;
     
 }
 
@@ -81,6 +92,18 @@ section:first-of-type {
     align-content: stretch;
     /* border: 1px solid black; */
 }
+
+
+.flex-container_top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: top;
+    align-content: stretch;
+    /* border: 1px solid black; */
+}
+
 
 .flex-item {
     flex: 1;
@@ -99,7 +122,6 @@ section:first-of-type {
     justify-content: center; 
     margin: 10px;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     /* border: 1px solid black; */
 }
@@ -165,14 +187,17 @@ ul {
 @media screen and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: left;
+    }
+    .flex-container_top {
+        flex-direction: column;
+        align-items: left;
     }
     .flex-container.reverse {
         flex-direction: column-reverse; 
     }
 
-    .flex-section_angebot .flex-container {
+    .flex-section_angebot .flex-container_top {
         flex-direction: column-reverse;
     }
 
@@ -186,6 +211,12 @@ ul {
     .flex-section_ablauf .flex-container {
         flex-direction: column;
     }
+    .flex-section_kotakt .flex-container {
+        flex-direction: column-reverse;
+    }
+    .flex-section_kosten .flex-container {
+        flex-direction: column-reverse;
+    }
 
     .flex-item {
         padding: 5px;
@@ -194,10 +225,14 @@ ul {
     .text-container {
         padding: 20px;
     }   
-    .flex-section_ich .flex-container .text-container {
+    /* .flex-section_ich .flex-container .text-container {
         text-align: left;
         align-items: flex-start; 
-    }
+    } */
+
+    /* .flex-section_ich .text-container details {
+        text-align: left;
+    } */
 }
 
 /* Header */
@@ -385,6 +420,7 @@ footer {
     display: none;
 }
 
+
 .prev,
 .next {
     cursor: pointer;
@@ -459,5 +495,7 @@ footer {
         opacity: 1
     }
 }
+
+
 
 

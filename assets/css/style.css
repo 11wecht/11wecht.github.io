@@ -63,7 +63,7 @@ section:first-of-type {
 
 .flex-section_leistung {
     padding: 20px;
-    background-color: #fdf5e6;
+    background-color: #fdfbf6;
     
 }
 
@@ -91,10 +91,13 @@ section:first-of-type {
     display: flex;
     justify-content: center; 
     margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .graphic-container img {
-    width: 40%;
-    height: auto;
+    width: 20rem;
+    height: 20rem;
     border-radius: 10px;
     /* border: 1px solid black; */
 }
@@ -142,6 +145,11 @@ section:first-of-type {
 .my-table th {
     /* background-color: #f2c35e33; */
     color: rgba(0, 0, 0, 1);
+}
+
+ul {
+    padding-left: 40px; /* Ensure indentation for list items */
+    margin-bottom: 10px; /* Add space between lists */
 }
 
 

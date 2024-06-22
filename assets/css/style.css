@@ -165,6 +165,8 @@ ul {
 @media screen and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .flex-container.reverse {
         flex-direction: column-reverse; 
@@ -192,6 +194,10 @@ ul {
     .text-container {
         padding: 20px;
     }   
+    .flex-section_ich .flex-container .text-container {
+        text-align: left;
+        align-items: flex-start; 
+    }
 }
 
 /* Header */

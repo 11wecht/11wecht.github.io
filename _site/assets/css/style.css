@@ -158,6 +158,21 @@ ul {
     .flex-container {
         flex-direction: column;
     }
+    .flex-container.reverse {
+        flex-direction: column-reverse; 
+    }
+
+    .flex-section_angebot .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .flex-section_ich .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-section_leistung .flex-container {
+        flex-direction: column-reverse;
+    }
 
     .flex-item {
         padding: 5px;
@@ -165,10 +180,7 @@ ul {
 
     .text-container {
         padding: 20px;
-    }
-    .flex-container.reverse {
-        flex-direction: column-reverse; 
-    }
+    }   
 }
 
 /* Header */

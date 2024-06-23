@@ -32,9 +32,9 @@ body {
     padding: 0;
 }
 
-section {
+/* section {
     padding-top: calc(var(--navbar-height) + 30px); 
-}
+} */
 section:first-of-type {
     padding-top: calc(var(--navbar-height) + 30px);
 }
@@ -58,28 +58,33 @@ section:first-of-type {
 .flex-section_ich {
     padding: 20px;
     background-color: #d5e1d4;
+    padding-top: var(--navbar-height);
     
 }
 
 .flex-section_leistung {
     padding: 20px;
     background-color: #f2f2f2;
+    padding-top: var(--navbar-height);
     
 }
 .flex-section_ablauf {
     padding: 20px;
     background-color: #d5e1d4;
+    padding-top: var(--navbar-height);
     
 }
 
 .flex-section_kontakt {
     padding: 20px;
     background-color: #f2f2f2;
+    padding-top: var(--navbar-height);
     
 }
 .flex-section_kosten {
     padding: 20px;
     background-color: #d5e1d4;
+    padding-top: var(--navbar-height);
     
 }
 
@@ -114,12 +119,12 @@ section:first-of-type {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    justify-content: space-between;
     /* border: 1px solid black; */
 }
 
 .graphic-container {
     display: flex;
-    justify-content: center; 
     margin: 10px;
     flex-direction: column;
     justify-content: space-between;
@@ -216,7 +221,7 @@ ul {
     .flex-section_ablauf .flex-container_top {
         flex-direction: column;
     }
-    .flex-section_kotakt .flex-container {
+    .flex-section_kontakt .flex-container {
         flex-direction: column-reverse;
     }
     .flex-section_kosten .flex-container {

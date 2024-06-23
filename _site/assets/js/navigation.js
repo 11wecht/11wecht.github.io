@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Navbar toggle functionality
   const toggleButton = document.getElementById('navbar-toggle');
   const navbarMenu = document.getElementById('navbar-menu');
 
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       navbarMenu.style.opacity = expanded ? '0' : '1';
   });
 
+  // Smooth scroll for navigation links
   const navLinks = document.querySelectorAll('.navbar-link');
   navLinks.forEach(link => {
       link.addEventListener('click', function(event) {
@@ -25,71 +27,42 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
   });
+
+  // Initialize both sliders
+  initSlider('mySlides', 'dot');
+  initSlider('mySlides1', 'dot1');
 });
 
-let slideIndex = 1;
+let slideIndexes = { 'mySlides': 1, 'mySlides1': 1 };
 
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function initSlider(slideClass, dotClass) {
+  showSlides(slideIndexes[slideClass], slideClass, dotClass);
 }
 
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function plusSlides(n, slideClass, dotClass) {
+  showSlides(slideIndexes[slideClass] += n, slideClass, dotClass);
 }
 
+function currentSlide(n, slideClass, dotClass) {
+  showSlides(slideIndexes[slideClass] = n, slideClass, dotClass);
+}
 
-function showSlides(n) {
+function showSlides(n, slideClass, dotClass) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let slides = document.getElementsByClassName(slideClass);
+  let dots = document.getElementsByClassName(dotClass);
+
+  if (n > slides.length) { slideIndexes[slideClass] = 1 }
+  if (n < 1) { slideIndexes[slideClass] = slides.length }
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
 
-
-
-
-let slideIndex1 = 1;
-
-showSlides(slideIndex1);
-
-// Next/previous controls
-function plusSlides1(n) {
-  showSlides1(slideIndex1 += n);
+  slides[slideIndexes[slideClass] - 1].style.display = "block";
+  dots[slideIndexes[slideClass] - 1].className += " active";
 }
-
-
-// Thumbnail image controls
-function currentSlide1(n) {
-  showSlides1(slideIndex1 = n);
-}
-
-
-function showSlides1(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides1");
-  let dots = document.getElementsByClassName("dot1");
-  if (n > slides.length) {slideIndex1 = 1}
-  if (n < 1) {slideIndex1 = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex1-1].style.display = "block";
-  dots[slideIndex1-1].className += " active";
-} 

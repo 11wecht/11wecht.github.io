@@ -12,7 +12,7 @@
 /* Root Variables */
 :root {
     --navbar-height: 64px;
-    --navbar-bg-color: #f2c45e;
+    --navbar-bg-color: #f2c35f;
     --navbar-text-color: #424746;
     --navbar-text-color-focus: white;
     --navbar-bg-contrast: hsl(0, 0%, 25%);

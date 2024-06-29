@@ -52,40 +52,42 @@ section:first-of-type {
 .flex-section_angebot {
     padding: 20px;
     background-color: #f2f2f2;
-    
+
 }
 
 .flex-section_ich {
     padding: 20px;
     background-color: #d5e1d4;
     padding-top: var(--navbar-height);
-    
+
 }
 
 .flex-section_leistung {
     padding: 20px;
     background-color: #f2f2f2;
     padding-top: var(--navbar-height);
-    
+
 }
+
 .flex-section_ablauf {
     padding: 20px;
     background-color: #d5e1d4;
     padding-top: var(--navbar-height);
-    
+
 }
 
 .flex-section_kontakt {
     padding: 20px;
     background-color: #f2f2f2;
     padding-top: var(--navbar-height);
-    
+
 }
+
 .flex-section_kosten {
     padding: 20px;
     background-color: #d5e1d4;
     padding-top: var(--navbar-height);
-    
+
 }
 
 .flex-container {
@@ -99,7 +101,7 @@ section:first-of-type {
 }
 
 
-.flex-container_top{
+.flex-container_top {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -131,6 +133,7 @@ section:first-of-type {
     align-items: center;
     /* border: 1px solid black; */
 }
+
 .graphic-container img {
     width: 12rem;
     height: 12rem;
@@ -150,7 +153,8 @@ section:first-of-type {
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 0 auto; /* Center the circular container */
+    margin: 0 auto;
+    /* Center the circular container */
     /* border: 1px solid black; */
     padding: auto;
 }
@@ -162,7 +166,8 @@ section:first-of-type {
     transform: translate(-50%, -50%);
     font-size: 24px;
     text-align: center;
-    font-family: inherit; /* Inherit font from the body */
+    font-family: inherit;
+    /* Inherit font from the body */
 }
 
 .my-table {
@@ -172,11 +177,12 @@ section:first-of-type {
     /* border: 1px solid white; */
 }
 
-.my-table th, .my-table td {
+.my-table th,
+.my-table td {
     /* border: 1px solid white; */
     padding: 10px;
     text-align: left;
-    
+
 }
 
 .my-table th {
@@ -185,8 +191,10 @@ section:first-of-type {
 }
 
 ul {
-    padding-left: 40px; /* Ensure indentation for list items */
-    margin-bottom: 10px; /* Add space between lists */
+    padding-left: 40px;
+    /* Ensure indentation for list items */
+    margin-bottom: 10px;
+    /* Add space between lists */
 }
 
 
@@ -196,12 +204,14 @@ ul {
         flex-direction: column;
         align-items: left;
     }
+
     .flex-container_top {
         flex-direction: column;
         align-items: left;
     }
+
     .flex-container.reverse {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
     }
 
     .flex-section_angebot .flex-container_top {
@@ -215,15 +225,19 @@ ul {
     .flex-section_leistung .flex-container {
         flex-direction: column-reverse;
     }
+
     .flex-section_ablauf .flex-container {
         flex-direction: column;
     }
+
     .flex-section_ablauf .flex-container_top {
         flex-direction: column;
     }
+
     .flex-section_kontakt .flex-container {
         flex-direction: column-reverse;
     }
+
     .flex-section_kosten .flex-container {
         flex-direction: column;
     }
@@ -234,7 +248,8 @@ ul {
 
     .text-container {
         padding: 20px;
-    }   
+    }
+
     /* .flex-section_ich .flex-container .text-container {
         text-align: left;
         align-items: flex-start; 
@@ -291,17 +306,21 @@ ul {
 }
 
 .navbar-logo {
-    width: 50px;  /* Fixed width */
-    height: 50px;  /* Fixed height */
+    width: 50px;
+    /* Fixed width */
+    height: 50px;
+    /* Fixed height */
     margin-right: 0.5em;
 }
 
 .navbar-title {
     font-size: 1.5em;
     font-family: 'Mukta Light', sans-serif;
-    white-space: nowrap;  /* Prevent wrapping */
+    white-space: nowrap;
+    /* Prevent wrapping */
     overflow: hidden;
-    text-overflow: ellipsis;  /* Add ellipsis if overflow occurs */
+    text-overflow: ellipsis;
+    /* Add ellipsis if overflow occurs */
 }
 
 #navbar-toggle {
@@ -379,6 +398,7 @@ ul {
 }
 
 @media screen and (min-width: 810px) {
+
     #navbar-toggle,
     #navbar-toggle[aria-expanded="true"] {
         display: none;
@@ -429,6 +449,7 @@ footer {
 .mySlides {
     display: none;
 }
+
 .mySlides1 {
     display: none;
 }
@@ -488,6 +509,7 @@ footer {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .dot1 {
     cursor: pointer;
     height: 15px;
@@ -520,4 +542,30 @@ footer {
     }
 }
 
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    /* background: #3B5998; */
+    color: #3B5998;
+}
+
+/* Twitter */
+.fa-instagram {
+    /* background: #E1306C; */
+    color: #E1306C;
+}

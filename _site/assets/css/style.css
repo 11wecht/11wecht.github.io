@@ -569,3 +569,12 @@ footer {
     /* background: #E1306C; */
     color: #E1306C;
 }
+
+details:hover {
+    cursor: default; /* Ändert den Mauszeiger zu einer Hand */
+}
+
+details:hover summary {
+    color: #007acc; /* Schriftfarbe ändern */
+    font-weight: bold; /* Schrift fett machen */
+}

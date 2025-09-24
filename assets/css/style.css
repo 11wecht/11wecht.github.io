@@ -90,6 +90,14 @@ section:first-of-type {
 
 }
 
+
+.flex-section_aktuelles {
+    padding: 20px;
+    background-color: #f2f2f2;
+    padding-top: var(--navbar-height);
+
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -239,6 +247,9 @@ ul {
     }
 
     .flex-section_kosten .flex-container {
+        flex-direction: column;
+    }
+    .flex-section_aktuelles .flex-container {
         flex-direction: column;
     }
 

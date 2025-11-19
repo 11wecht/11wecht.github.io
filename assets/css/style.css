@@ -85,7 +85,7 @@ section:first-of-type {
 
 .flex-section_kosten {
     padding: 20px;
-    background-color: #d5e1d4;
+    background-color: #f2f2f2;
     padding-top: var(--navbar-height);
 
 }
@@ -94,6 +94,13 @@ section:first-of-type {
 .flex-section_aktuelles {
     padding: 20px;
     background-color: #f2f2f2;
+    padding-top: var(--navbar-height);
+
+}
+
+.flex-section_terminbuchung {
+    padding: 20px;
+    background-color: #d5e1d4;
     padding-top: var(--navbar-height);
 
 }
@@ -252,6 +259,12 @@ ul {
     .flex-section_aktuelles .flex-container {
         flex-direction: column;
     }
+
+    .flex-section_terminbuchung .flex-container {
+        flex-direction: column;
+    }
+
+
 
     .flex-item {
         padding: 5px;

@@ -3,6 +3,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const toggleButton = document.getElementById('navbar-toggle');
   const navbarMenu = document.getElementById('navbar-menu');
 
+  const newsPopupOverlay = document.getElementById('news-popup-overlay');
+  const newsPopupClose = document.getElementById('news-popup-close');
+
+  if (newsPopupOverlay && newsPopupClose) {
+      newsPopupOverlay.classList.add('is-open');
+      document.body.classList.add('modal-open');
+
+      const closeNewsPopup = function() {
+          newsPopupOverlay.classList.remove('is-open');
+          document.body.classList.remove('modal-open');
+      };
+
+      newsPopupClose.addEventListener('click', closeNewsPopup);
+      newsPopupOverlay.addEventListener('click', function(event) {
+          if (event.target === newsPopupOverlay) {
+              closeNewsPopup();
+          }
+      });
+
+      document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape') {
+              closeNewsPopup();
+          }
+      });
+  }
+
   toggleButton.addEventListener('click', function() {
       const expanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
       toggleButton.setAttribute('aria-expanded', !expanded);

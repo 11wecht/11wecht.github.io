@@ -33,6 +33,10 @@ body {
     padding: 0;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 /* section {
     padding-top: calc(var(--navbar-height) + 30px); 
 } */
@@ -86,7 +90,7 @@ section:first-of-type {
 
 .flex-section_kosten {
     padding: 20px;
-    background-color: #d5e1d4;;
+    background-color: #d5e1d4;
     padding-top: var(--navbar-height);
 
 }
@@ -94,7 +98,7 @@ section:first-of-type {
 
 .flex-section_aktuelles {
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #f3b7c4;
     padding-top: var(--navbar-height);
 
 }
@@ -158,6 +162,53 @@ section:first-of-type {
     /* border: 1px solid black; */
 }
 
+.news-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    z-index: 1100;
+}
+
+.news-popup-overlay.is-open {
+    display: flex;
+}
+
+.news-popup {
+    position: relative;
+    width: min(100%, 560px);
+    max-width: 560px;
+    background: white;
+    color: #222;
+    border-radius: 12px;
+    padding: 2rem 2rem 1.5rem;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.news-popup-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    border: none;
+    background: transparent;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #424746;
+}
+
+.news-popup h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+}
+
+.news-popup p {
+    margin: 0;
+}
+
 .text-container {
     padding: 30px;
     text-align: justify;
@@ -205,7 +256,21 @@ section:first-of-type {
     /* background-color: #f2c35e33; */
     color: rgba(0, 0, 0, 1);
 }
+.contact-addresses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
 
+.contact-address {
+    min-width: 220px;
+    max-width: 320px;
+}
+
+.contact-address p {
+    margin: 0;
+}
 ul {
     padding-left: 40px;
     /* Ensure indentation for list items */

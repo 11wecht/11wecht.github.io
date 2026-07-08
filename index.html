@@ -1,7 +1,7 @@
----
+<!-- ---
 layout: default
----
-<!-- <!DOCTYPE html>
+--- -->
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -25,7 +25,7 @@ layout: default
     <meta property="og:type" content="website">
 </head>
 
-</html> -->
+</html>
 
 <body>
     <header id="navbar">
@@ -57,6 +57,18 @@ layout: default
         </nav>
     </header>
 
+
+    <div class="news-popup-overlay is-open" id="news-popup-overlay" role="dialog" aria-modal="true"
+        aria-labelledby="news-popup-title">
+        <div class="news-popup">
+            <button type="button" class="news-popup-close" id="news-popup-close" aria-label="Popup schließen">×</button>
+            <h2 id="news-popup-title">Aktuelles</h2>
+            <p>
+                Ab August 2026 begrüße ich Sie auch an meinem neuen Praxisstandort in Hall bei Admont. Termine sind
+                künftig sowohl in Frohnleiten als auch in Hall bei Admont nach Vereinbarung möglich.
+            </p>
+        </div>
+    </div>
 
     <section class="flex-section_angebot" id="angebot">
         <div class="flex-container_top">
@@ -100,7 +112,7 @@ layout: default
             <div class="flex-item text-container">
                 <h1>Schön, dass Sie den Weg auf meine Homepage gefunden haben - herzlich willkommen!</h1>
                 <br>
-                <p>Mein Name ist Katrin Wecht und ich bin Klinische Psychologin in Frohnleiten.</p>
+                <p>Mein Name ist Katrin Wecht und ich bin Klinische Psychologin in Admont und Frohnleiten.</p>
                 <br>
                 <p>In meiner klinisch-psychologischen Praxis biete ich einen geschützten Raum, der es Ihnen ermöglicht,
                     Sie selbst zu sein und sich vollständig angenommen zu fühlen - einen Ort, der besonders in
@@ -137,14 +149,13 @@ layout: default
 
 
     <!-- <section class="flex-section_aktuelles" id="aktuelles">
-        <h1>Aktuelles</h1>
         <div class="flex-container">
-            <div class="flex-item image-container">
-                <img src="assets/images/gruppe_1.webp" style="width:100%" alt="aktuelles">
+            <div class="flex-item text-container">
+                <h1>Aktuelles</h1>
+                <br>
+                <p>Ab August 2026 eröffne ich einen neuen Praxisstandort in Hall 441. Termine vereinbare ich gerne nach individueller Absprache. </p>
             </div>
-            <div class="flex-item image-container">
-                <img src="assets/images/gruppe_2.webp" style="width:100%" alt="aktuelles">
-            </div>
+
         </div>
     </section> -->
 
@@ -571,16 +582,28 @@ layout: default
                 <!-- <div class="flex-item graphic-container"> 
                         <img src="/assets/images/LOGO_KW.svg">
                     </div> -->
-                <p>Katrin Wecht, MSc. <br>
-                    Praxis für klinische Psychologie<br>
-                    Hauptplatz 34, 8130 Frohnleiten<br>
-                    office@kw-psychologie.at<br>
-                    +43 670 355 86 18<br>
-                    <a href="https://www.psychnet.at/wechtkatrin" target="_blank">psychnet.at</a><br>
-                    <a href="https://www.facebook.com/share/6JUkmHxU4CafPjTC/?mibextid=LQQJ4d" target="_blank"
-                        class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/kw.psychologie/" target="_blank" class="fa fa-instagram"></a>
-                </p>
+                <div class="contact-addresses">
+                    <div class="contact-address">
+                        <p>Katrin Wecht, MSc. <br>
+                            Praxis für klinische Psychologie<br>
+                            Hauptplatz 34, 8130 Frohnleiten<br>
+                            office@kw-psychologie.at<br>
+                            +43 670 355 86 18<br>
+                            <a href="https://www.psychnet.at/wechtkatrin" target="_blank">psychnet.at</a><br>
+                            <a href="https://www.facebook.com/share/6JUkmHxU4CafPjTC/?mibextid=LQQJ4d" target="_blank"
+                                class="fa fa-facebook"></a>
+                            <a href="https://www.instagram.com/kw.psychologie/" target="_blank"
+                                class="fa fa-instagram"></a>
+                        </p>
+                    </div>
+                    <div class="contact-address">
+                        <p>Katrin Wecht, MSc.<br>
+                            Praxis für klinische Psychologie<br>
+                            Hall 441, 8911 Admont<br>
+                            office@kw-psychologie.at<br>
+                            +43 670 355 86 18</p>
+                    </div>
+                </div>
                 <!-- Öffnungszeiten -->
                 <!-- <div class="oeffnungszeiten">
                     <h2>Öffnungszeiten</h2>

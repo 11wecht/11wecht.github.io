@@ -6,31 +6,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/navigation.js" defer></script>
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>Psychologie Wecht</title>
+    <title>{{ page.title | default: "Psychologie Wecht" }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description"
-        content="Katrin Wecht, MSc - Klinische Psychologin in Admont und Frohnleiten. Spezialisiert auf psychologische Behandlung und Therapie bei psychischen Problemen">
+        content="{{ page.description | default: 'Katrin Wecht, MSc - Klinische Psychologin in Admont und Frohnleiten. Spezialisiert auf psychologische Behandlung und Therapie bei psychischen Problemen' }}">
     <meta name="keywords"
-        content="Klinische Psychologin, Katrin Wecht,Psychologie, Admont, Frohnleiten, Psychologische Behandlung, Psychische Störungen, Entwicklungspsychologische Beratung, Emotionale und soziale Entwicklung, Schulische Leistungen, Verhaltensauffälligkeiten, Ängste und Phobien, Schlafstörungen, Essstörungen, Depressionen, bipolare Erkrankung, Angst- und Panikstörungen, Spezifische Phobien, Soziale Ängstlichkeit, Zwangsstörungen, Autismus-Spektrum-Störungen, Krankheitsängste, psychosomatische Störungen, Psychotische Störungen, Schizophrenie, Persönlichkeitsstörungen, Suchterkrankungen, Internetsucht, Gamingsucht, Kaufsucht, Alkohol, Drogen, Mobbing, Ausgrenzung, Psychische Probleme Schwangerschaft, Psychische Probleme nach Geburt, Beziehungsthemen, Selbstwertprobleme, Erziehungsfragen, Lebenskrisen, Anpassungsstörungen, Verlust, Trauer, Suizidalität, Individuelle Problemstellungen">
-    <meta name="author" content="kw-psychologie">
-    <meta name="robots" content="index, follow">
+        content="{{ page.keywords | default: 'Klinische Psychologin, Katrin Wecht,Psychologie, Admont, Frohnleiten, Psychologische Behandlung, Psychische Störungen, Entwicklungspsychologische Beratung, Emotionale und soziale Entwicklung, Schulische Leistungen, Verhaltensauffälligkeiten, Ängste und Phobien, Schlafstörungen, Essstörungen, Depressionen, bipolare Erkrankung, Angst- und Panikstörungen, Spezifische Phobien, Soziale Ängstlichkeit, Zwangsstörungen, Autismus-Spektrum-Störungen, Krankheitsängste, psychosomatische Störungen, Psychotische Störungen, Schizophrenie, Persönlichkeitsstörungen, Suchterkrankungen, Internetsucht, Gamingsucht, Kaufsucht, Alkohol, Drogen, Mobbing, Ausgrenzung, Psychische Probleme Schwangerschaft, Psychische Probleme nach Geburt, Beziehungsthemen, Selbstwertprobleme, Erziehungsfragen, Lebenskrisen, Anpassungsstörungen, Verlust, Trauer, Suizidalität, Individuelle Problemstellungen' }}">
+    <meta name="author" content="{{ page.author | default: 'kw-psychologie' }}">
+    <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
     <meta property="og:title"
-        content="Katrin Wecht, MSc - Klinische Psychologin in Admont und Frohnleiten | psychologische Behandlung & Therapie">
+        content="{{ page.og_title | default: page.title | default: 'Katrin Wecht, MSc - Klinische Psychologin in Admont und Frohnleiten | psychologische Behandlung & Therapie' }}">
     <meta property="og:description"
-        content="Katrin Wecht, MSc - Klinische Psychologin in Admont und Frohnleiten. Spezialisiert auf psychologische Behandlung und Therapie bei psychischen Problemen.">
-    <meta property="og:type" content="website">
+        content="{{ page.og_description | default: page.description | default: 'Katrin Wecht, MSc - Klinische Psychologin in Admont und Frohnleiten. Spezialisiert auf psychologische Behandlung und Therapie bei psychischen Problemen.' }}">
+    <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
 </head>
-
-<!-- Google tag (gtag.js)
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D9X18H6W82"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D9X18H6W82');
-</script> -->
-
-{{ content }}
-
+<body>
+    {{ content }}
+</body>
 </html>
